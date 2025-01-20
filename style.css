@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.5px;
+    font-family: "Libre Baskerville", serif;
+}
+
+.main-container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 2rem auto;
+    padding: 1rem;
+    /* background-color: antiquewhite; */
+}
+
+.heading-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.heading-text h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.heading-text p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #b8b8b8;
+}
+
+.form-main-container{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border: 1px solid #D65108;
+    border-right: none;
+    outline: none;
+    font-size: 1rem, 1rem, 1rem, 1.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+input::placeholder{
+    color: #D65108;
+}
+
+
+.search-btn{
+    width: fit-content;
+    height: auto;
+    padding: 1.1rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border: none;
+    background-color: #D65108;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-text-container{
+    width: fit-content;
+    height: auto;
+    padding: 2rem;
+}
+
+.search-text-container h2{
+    font-size: 1.5rem;
+}
+
+.search-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.image-and-receipe-container{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    padding-bottom: 2rem;
+    row-gap: 1rem;
+}
+
+.image-container{
+    width: 100%;
+    height: auto;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.food-text-and-receipe-button-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.food-text-and-receipe-button-container h3{
+    font-size: 1.2rem;
+}
+
+.food-text-and-receipe-button-container button{
+    padding: 1rem;
+    border-radius: 3rem;
+    font-size: 1rem;
+    background-color: #D65108;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Modal styling begins */
+.modal-overlay{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.modal-overlay-visible{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: visible;
+}
+
+.modal-items{
+    width: 32%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.7rem;
+    background-color: #D65108;
+    padding: 2rem;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    border-radius: 1rem;
+}
+
+.close-icon-container{
+    width: 100%;
+    height: auto;
+    text-align: end;
+    cursor: pointer;
+}
+.close-icon-container i{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.heading-modal-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+.heading-modal-text h1{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.heading-modal-text p{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.4rem;
+    background-color: #fff;
+    color: #D65108;
+    border-radius: 0.2rem;
+}
+
+.heading-modal-text h3{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.instruction-text{
+    width: 100%;
+    max-height: 10rem;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.instruction-text::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+.instruction-text::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.instruction-text::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 1rem;
+}
+
+.instruction-text p{
+    text-align: center;
+    color: #d9d4d4;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.image-and-watch-video-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.image-modal-container{
+    width: 64px;
+    height: 64px;
+}
+
+.image-modal-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+}
+
+.image-and-watch-video-container a{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+.image-and-watch-video-container a:hover{
+    color: #ffffffc9;
+}
+
+/* Style for the Favorite Button */
+.favorite-btn {
+    padding: 1rem;
+    border-radius: 3rem;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.favorite-btn:hover {
+    background-color: #218838;
+}
+
+/* Style for Show Favorites Button */
+.show-favorites-btn {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #D65108;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.show-favorites-btn:hover {
+    background-color: #c44d07;
+}
+
+
+
+/* Responsive styling  */
+@media screen and (max-width: 480px){
+    .main-container{
+        width: 100%;
+    }
+    .heading-text{
+        text-align: center;
+    }
+    .form-main-container{
+        width: 90%;
+    }
+    .image-and-receipe-container{
+        width: 100%;
+    }
+    .modal-items{
+        width: 80%;
+    }
+    .heading-modal-text{
+        text-align: center;
+    }
+}
+
+/* Tablet responsvive  */
+@media screen and (480px <= width <= 840Px){
+    .form-main-container{
+        width: 80%;
+    }
+    .image-and-receipe-container{
+        width: 100%;
+    }
+    .search-container{
+        row-gap: 2.5rem;
+    }
+}
+
